@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  
+}
+
+#contact{
+  margin-top: 13vh;
+  display: flex;
+  flex-direction:column;
+  width:100vw;
+  height: 40vh; 
+  align-items: center;
+  justify-content: center;
+  animation: conta 3s; 
+  /* background: lightcoral; */
+  
+}
+@keyframes conta {
+  0% {
+      transform: rotateX(0deg) scale(0);
+  }
+
+}
+.our-contacts{
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  width: 65vw;
+  height: 35vh;
+  align-items: center;
+  justify-content: center;
+  /* background-color: red; */
+} 
+
+.our-contacts h1{
+font-family: fantasy;
+font-size: 35px;
+color: #69140e;
+}
+
+.line{
+  width: 100px;
+  height: 4px;
+  background-color: #69140e;
+}
+
+
+
+.our-contacts p{
+  margin-top: 2vh;
+  text-align: center;
+  width: 55vw;
+  height: 37vh;
+  font-size: 20px;
+  color: #69140e;
+  /* background-color: blue; */
+}
+/* ************************************************** */
+
+/* *********************************************** */
+.contact-icons{
+  margin-top: 4vh;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 60vh;
+  align-items: center;
+  justify-content: center;
+  /* background: green; */
+  }
+
+.contact-icons i{
+  display: flex;
+  width: 60px;
+  height: 75px;
+  border-radius: 5px;
+  background-color: #69140e;
+  /*background: blue;*/
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.contact-icons .phone i{
+  color: white !important;
+  }
+
+.contact-icons h1{
+font-family: fantasy;
+font-size: 25px;
+color: #69140e;
+}
+
+.contact-icons p{
+font-weight: bold;
+color: #69140e;
+}
+
+/*.phone .fa-solid{*/
+/*    color: white;*/
+/*}*/
+
+.phone, .whatsapp, .email, .address{
+  margin: 8px;
+  display: flex;
+  width: 550px;
+  height: 170px;
+  align-items: center;
+  justify-content: center;
+  /* background-color: yellow; */
+}    
+
+.sub-phone, .sub-whatsapp, .sub-email, .sub-address{
+  display: flex;
+  flex-direction: column;
+  width:450px;
+  height: 100px;
+  margin-left: 5px;
+  padding-top: 10px;
+  padding-left: 10px;
+  /* background-color: red; */
+}
+
+.contact-icons a{
+text-decoration: none;
+color: white;
+}
+
+.contact-icons i:hover{
+background-color: black ;
+}
+
+.contact-icons p:hover{
+color:rgb(213,0,0) ;
+}
+
+/* ****************************************** */
+#yes-msg{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80vw;
+  height: 100vh;
+  /* background-color: blue; */
+}
+.contact-form{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 80vw;
+  height: 80vh;
+  background-color: #d58936;
+}
+
+.cont-form, .maps{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38vw;
+  height: 70vh;
+  border-radius: 10px;
+  /* background-color: rgb(70, 14, 166); */
+  color: white;
+
+}
+
+form h5{
+  font-family: fantasy;
+  color: #69140e;
+}
+
+form input{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 500px;
+  height: 50px;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+  padding-left: 15px;
+  background-color: #69140e;
+  color: white;
+  
+}
+
+textarea{
+  width: 500px;
+  height: 30vh;
+  border-radius: 6px;
+  font-size: 15px;
+  padding-top: 10px;
+  padding-left: 15px;
+  background-color: #69140e;
+  color: white;
+}
+
+.submit{
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 45px;
+  justify-content: center;
+  text-align: center;
+  background-color:#69140e;
+  color: white;
+  font-size: 18px;
+}
+.submit:hover{
+  background-color: #d58936;
+  outline: #69140e solid 2px;
+  color: #69140e;
+}
+/* ***************** */
+/* ***************************************************** */
+.call-bar{
+  width: 80vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #69140e;
+}
+.call-bar:hover{
+  background-color: #d58936;
+}
+
+.call-bar .fa-solid{
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  color: #69140e;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.call-bar a{
+  display: flex;
+  width: 80vw;
+  height: 10vh;
+  text-decoration: none;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.call-bar p{
+  margin-top: 17px;
+  font-size: 15px;
+}
+
+.call-bar a:hover{
+  transform: scale(1.1);
+  transition: transform 0.2s;
+  
+}
+
+
+  

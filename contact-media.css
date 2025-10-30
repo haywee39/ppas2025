@@ -1,0 +1,83 @@
+@media(width < 912px){
+
+    #contact{
+      margin-top: 12vh;
+      height: 25vh;
+
+    }
+   .our-contacts{
+    margin-top: 0vh;
+    width: 100vw;
+    height: 35vh;
+   }
+   .our-contacts p{
+    width: 95vw;
+    height: 15vh;
+    /* background-color: yellow; */
+   }
+   /* ********************************************************* */
+   .contact-icons{
+    margin-top: 7vh;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 83vh;
+
+   }
+
+   .phone, .whatsapp, .email, .address{
+    width: 90vw;
+    height: 170px;
+    
+  }
+  
+  .sub-phone, .sub-whatsapp, .sub-email, .sub-address{
+    width:420px;
+    height: 100px;
+  }
+  
+   /* ******************************************************* */
+   #yes-msg{
+    margin-top: 10vh;
+    width: 100vw;
+    height: 155vh;
+   }
+   .contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 143vh;
+    width: 96vw;
+   }
+   .cont-form, .maps{
+    width: 90vw;
+    height: 73vh;
+    margin-bottom: 40px;
+   }
+   form input{
+    padding-left: 0px;
+    width: 85vw;
+    height: 50px;
+   }
+   textarea{
+    padding-left: 0px;
+    width: 85vw;
+    height: 250px;
+
+   }
+   .submit{
+    width: 50vw;
+    height: 50px;
+   }
+
+   .maps iframe {
+    width: 80%; /* Match the container's width */
+    height: 85%; /* Match the container's height */
+    border: 0; /* Remove iframe border */
+}
+   /* ********************************************** */
+   .call-bar{
+    width: 96vw;
+   }
+
+}

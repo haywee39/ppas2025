@@ -1,0 +1,75 @@
+ #believes{
+    display: flex;
+    flex-direction:column;
+    width:100vw;
+    height: 85vh; 
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(-45deg, #d58936, white, #69140e);
+    background-size: 400% 400%;
+    animation: gradientShift 3s ease infinite;
+  }
+
+  .belief-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 60vh;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+  }
+
+  .belief-each {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 28vw;
+    height: 55vh;
+    padding: 25px;
+    gap: 20px;
+    /* border: 2px solid #d58936; */
+    box-shadow: 5px 5px 5px #d58936;
+  }   
+  .belief-each h1 {
+    font-family: montserrat;
+    font-weight: 800;
+    font-size: 25px;
+    text-align: center;
+    color: #69140e;
+  }
+  .belief-each p{
+    color: #69140e;
+  }
+
+  .belief-each i{
+     font-size: 2.5rem;
+    color: #69140e;
+    margin-bottom: 1.5rem;
+  }
+
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+/* MEDIA QUERY  */
+  @media (width < 768px){
+     #believes{
+      height: auto;
+      /* padding: 2rem; */
+     }
+    .belief-container{
+      flex-direction: column;
+      flex-wrap: nowrap;
+      height: auto;
+      padding: 2rem;
+      gap: 2rem;
+    }
+
+    .belief-each {
+    width: 80vw;
+    height: 45vh;
+    padding: 1rem;
+  }   
+  }

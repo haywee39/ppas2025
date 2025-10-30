@@ -1,0 +1,90 @@
+@media (width < 400px){
+
+  .project{
+    margin-top: 0;
+    height: auto;
+  }
+  .project-head {
+    margin-top: 0;
+  }
+  
+  .project-head p{
+    font-size: 17px;
+  }
+
+}
+
+/* *************************************************************************************************** */
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+/* **************************************************************************************************** */
+
+
+
+
+
+
+@media (width < 912px){
+
+      .content{
+        width: 100vw;
+      }
+
+      .content h1{
+        font-size: 50px;
+        text-align: center;
+        /* background-color: red; */
+        
+      }
+      .content h3{
+        font-size: 20px;
+      }
+
+      .intro-content{
+        display: flex;
+        flex-direction: column;
+      }
+      /* ****************************************************** */
+
+      #promo{
+        height: 50vh;
+
+      }
+      /* ******************************************************** */
+
+      .project{
+        margin-top: 7vh;
+        height: auto;
+        /* background-color: orange; */
+      }
+    
+      .project-head{
+        margin-top: 2vh;
+        display: flex;
+        flex-direction: column;
+        width: 95vw;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        /* background-color: yellow; */
+      }
+      .project-grid{
+        height: auto;
+        margin: 2vh;
+        gap: 20px;
+      }
+    
+      .project-item{
+        width: 300px;
+        height: 40vh;
+      }
+      .lightbox{
+        margin-top: 10vh;
+      }
+    
+      .lightbox-content {
+        background-color: black;
+        width: 85vw;
+        height: 55vh;
+      }
+
+    }

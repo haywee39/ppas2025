@@ -1,0 +1,17 @@
+@media (width < 912px) {
+
+      #prices{
+        padding-top: 7vh;
+        height: auto;
+      }
+     .price-list{
+      width: 100vw;
+      height: auto;
+     }
+     .price-list p{
+      width: 95vw;
+      height: auto;
+     }
+     /* ********************************************************* */
+
+    }

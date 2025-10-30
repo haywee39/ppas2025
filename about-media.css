@@ -1,0 +1,266 @@
+@media (width < 400px){
+  #about{
+    width: 100vw;
+    height: auto;
+  }
+
+   .core-vision-mission{
+    display: flex;
+    flex-direction: column;
+    height: 265vh;
+    width: 100vw;
+    /* background-color: aqua; */
+  }
+  .believe{
+    display: flex;
+    width: 100vw;
+    height: 80vh;
+    text-align: center;
+    justify-content: center;
+    padding-left: 0;
+    /* background-color: yellowgreen; */
+  }
+  .believe h1{
+    font-size: 24px;
+  }
+  
+  .believe p{
+    font-size: 16px;
+    padding-top: 0px;
+  }
+  /* ********************************************************** */
+  .about-ppas-container{
+    margin-top: 5vh;
+    padding-top: 0;
+    height: auto;
+  }
+  .about-ppas-container::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-image: url(./pageswitback/helmet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* opacity: 0.3; */
+  }
+  .texts{
+    width: 95vw;
+    height: 145vh;
+    /* background-color: red; */
+  }
+  .texts img{
+    width: 130px;
+    height: 130px;
+    border-radius: 130px;
+  }
+  .text h1{
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  .texts p{
+    font-size: 17px;
+  }
+  /* **************************************************8***** */
+  #team{
+    margin-top: 4vh;
+    height: auto;
+    width: 100vw;
+  }
+  .our-team{
+    width: 100vw;
+    height: 35vh;
+    /* background-color: yellow; */
+  }
+  .our-team p{
+    display: flex;
+    /* height: 55vh; */
+    width: 50vw;
+    font-size: 17px;
+    /* background-color: red; */
+  }
+
+  /* ************************************************************* */
+  #client{
+    height: auto;
+  }
+  .our-client p{
+    font-size: 17px;
+  }
+  .our-client p{
+    width: 95vw;
+  }
+
+  .our-client{
+    width: 100vw;
+    height: 70vh;
+    /* background-color: #f8de7e; */
+  }
+  /* ***************************************************** */
+  .man{
+    width: 100vw;
+    height: auto;
+    /* background-color: yellow; */
+}
+/* ****************************************************** */
+#reach-out{
+  margin-top: 4vh;
+  padding-top: 10px;
+}
+/* ***************************************** */
+.xyz{
+  padding-left: 0;
+}
+}
+  /* ********************************************************************** */
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+/* ************************************************************************************* */
+
+
+
+
+
+
+@media (width < 912px){
+     #about{
+        width: 100vw;
+        height: auto;
+      }
+
+      .core-vision-mission{
+        display: flex;
+        flex-direction: column;
+        height: 145vh;
+        width: 100vw;
+      }
+      .believe{
+        width: 95vw;
+        height: 40vh;
+        text-align: center;
+        padding-left: 0;
+      }
+      /* ********************************************************** */
+      .about-ppas-container{
+        margin-top: 5vh;
+        padding-top: 0;
+        height: auto;
+      }
+      .about-ppas-container::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-image: url(./pageswitback/helmet.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+      .texts{
+        width: 95vw;
+        height: 145vh;
+      }
+      .texts img{
+        width: 180px;
+        height: 180px;
+      }
+      .text h1{
+        font-size: 25px;
+      }
+      /* ***************************************** */
+      #team{
+        padding-top: 5vh;
+        height: auto;
+        width: 100vw;
+      }
+      .our-team p{
+        width: 95vw;
+        height: 15vh;
+      }
+      .team-container{
+        width: 100vw;
+        height: auto;
+        justify-content:center;
+      }
+      .team-profile{
+        height: 450px;
+        width: 325px;
+        overflow-y: hidden;
+        overflow-x: hidden;
+      }
+      .team-profile img{
+        height: 70%;
+        width: 100%;
+       
+      }
+      .team-details{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 125px;
+        width: 325px;
+      }
+      .team-details h1{
+        font-size: 20px;
+      }
+      .team-profile p{
+        font-size: 16px;
+      }
+
+      /* ************************************************* */
+      #client{
+        height: auto;
+        width: 100vw;
+      }
+      .our-client p{
+        width: 95vw;
+      }
+
+      .our-client{
+        width: 100vw;
+        height: 60vh;
+        /* background-color: #f8de7e; */
+      }
+
+      .man{
+        margin-top: 5vh;
+        width: 100vw;
+        height: 45vh;
+      }
+      .slider .list .item img{
+        width: 50%;
+    }
+
+      #reach-out{
+        height: auto;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .xyz{
+        width: 100vw;
+        height: 50vh;
+      }
+      .men-at-work{
+        height: 50vh;
+        width: 100vw;
+        margin-bottom: 0;
+        /* background-color: red; */
+        overflow-y: hidden;
+        overflow-x: hidden;
+      }
+
+      .slide-in-image {
+        width: 80vw; /* Adjust to the desired image size */
+        height: 50vh;
+        padding-left: 80px;
+        overflow-y: hidden;
+        overflow-x: hidden;
+      }
+
+}

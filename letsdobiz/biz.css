@@ -1,0 +1,163 @@
+#reach-out{
+  position: relative;
+  display: flex;
+  width: 100vw;
+  height: 95vh;
+  padding: 3rem;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color:#d58936;
+  color: white;
+  font-family: montserrat;
+}
+#reach-out::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;  
+  background-image: url(/pages/ladywriting-removebg-preview.png);
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: center center;
+    background-attachment: fixed;
+    opacity: 0.3;
+}
+
+
+
+
+
+
+.xyz{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 35vw;
+  height: 80vh;
+  gap: 25px;
+  padding: 30px;
+  /* background-color: red; */
+ 
+}
+
+.xyz h1{
+  font-size: 28px;
+  color: #69140e;
+}
+
+.xyz a{
+  text-decoration: none;
+  color: white;
+}
+.xyz i{
+  color: #69140e;
+}
+
+.xyz p{
+  font-size: 18px;
+  /* color: #69; */
+}
+
+.xyz a :hover{
+  color:#69140e;
+}
+/* &&&&&&&&&&&&&&&&&& */
+.men-at-work {
+  overflow: hidden;
+  width: 35vw;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  /* background-color: blue; */
+}
+
+.slide-in-image {
+  width: 30vw; /* Adjust to the desired image size */
+  height: 85vh;
+  opacity: 0;
+  transform: translateX(100%); /* Start position: off the screen to the right */
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+.slide-in-image.visible {
+  transform: translateX(0);
+  opacity: 1;
+}
+/* &&&&&&&&&&&&&&&&&&&&&&&&& */
+/* Get quote button  */
+.fancy-button {
+  position: relative;
+  width: 150px;
+  height: 50px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #69140e;
+  border: 2px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  transition: color 0.4s ease;
+}
+
+.fancy-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #d58936;
+  transition: left 0.4s ease;
+  z-index: 0;
+}
+
+.fancy-button:hover::before {
+  left: 0; /* Slide effect on hover */
+}
+
+.fancy-button:hover {
+  color: #69140e;
+  border-color: white; /* Border color change */
+}
+
+.fancy-button span {
+  position: relative;
+  z-index: 1; /* Keep text on top */
+}
+.fancy-button a{
+  text-decoration: none;
+  color: white;
+}
+
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+/* MEDIA QUERY  */
+@media (width < 768px){
+    #reach-out{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .xyz{
+        width: 100vw;
+        height: 50vh;
+      }
+      .men-at-work{
+        height: 50vh;
+        width: 100vw;
+        margin-bottom: 0;
+      }
+
+      .slide-in-image {
+        width: 80vw; /* Adjust to the desired image size */
+        height: 50vh;
+        padding-left: 80px;
+      }
+}

@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  overflow-x: hidden;
+}
+/* ********************************************************** */
+
+#prices{
+    padding-top: 10vh;
+    display: flex;
+    flex-direction:column;
+    width:100vw;
+    height: 67vh; 
+    align-items: center;
+    justify-content: center;
+    animation: listing 3s; 
+    /* background: lightcoral; */
+    
+  }
+  @keyframes listing {
+    0% {
+        transform: rotateX(0deg) scale(0);
+    }
+  
+  }
+  .price-list{
+    padding-top: 8vh;
+  
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+    height: 65vh;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+  } 
+  
+  .price-list h1{
+  font-family: fantasy;
+  /*font-size: 35px;*/
+  color: #69140e;
+  }
+  
+  .line{
+    width: 100px;
+    height: 4px;
+    background-color: #69140e;
+  }
+  
+  
+  
+  .price-list p{
+    margin-top: 2vh;
+    text-align: center;
+    width: 55vw;
+    height: 30vh;
+    /*font-size: 20px;*/
+    color: #69140e;
+    /* background-color: blue; */
+  }
+  /* ************************************************** */
+ 
+/* Basic Styling for Menu Section */
+.menu-section {
+    /* margin-top: 10vh; */
+    display: flex;
+    flex-direction: column;
+    padding: 50px 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: #d58936;
+  }
+  .menu-section h2{
+    color: #69140e;
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  /* Menu Card Styles */
+  .menu-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .menu-card {
+    width: 370px;
+    height: 350px;
+    perspective: 1000px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: #69140e 5px;
+    transition: transform 0.6s ease;
+  }
+  
+  .menu-card-front,
+  .menu-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .menu-card-front::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-image: url(./prjct-img/favrytpic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.2;
+    pointer-events:none
+  }
+  
+  .menu-card-front {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    transform: rotateY(0);
+  }
+  
+  .menu-card-front img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .menu-card-front h5 {
+    /* font-size: 1.3em; */
+    color: #69140e;
+    margin: 10px 0;
+  }
+
+  .menu-card-front p{
+    color: #69140e;
+  }
+  
+  .details-btn {
+    margin-top: auto;
+    padding: 8px 15px;
+    font-size: 1em;
+    background: #69140e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .details-btn:hover {
+    background: #a91f1f;
+  }
+  
+  .menu-card-back {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 15px;
+    transform: rotateY(180deg);
+  }
+
+  .menu-card-back::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-image: url(./pageswitback/ladywriting.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.3;
+    pointer-events:none
+  }
+
+  .menu-card-back b, i{
+    color: #69140e;
+  }
+  
+  .menu-card-back p {
+    list-style: none;
+    padding: 0;
+    /* font-size: 0.9em; */
+    color: #69140e;
+  }
+  
+  .back-btn {
+    padding: 8px 15px;
+    font-size: 1em;
+    background: #69140e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .back-btn:hover {
+    background: #a91f1f;
+  }
+  
+  /* Flip Effect */
+  .menu-card.flip .menu-card-front {
+    transform: rotateY(180deg);
+  }
+  
+  .menu-card.flip .menu-card-back {
+    transform: rotateY(0);
+  }

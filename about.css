@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  overflow-x: hidden;
+  font-family: montserrat;
+  
+}
+/* ************************************************** */
+
+/* START- ABOUT SECTION BEGINS HERE */
+#about{
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    /* background-color: yellow; */
+  }
+
+/* ************************************************* */
+
+/* **************************************************** */ 
+  /*start- ppas description styling */
+  .about-ppas-container{
+      position: relative;
+      width: 100vw;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 3rem;
+      /* background-color: blue; */
+  }
+  
+  .about-ppas-container::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-image: url(./pageswitback/helmet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.3;
+  }
+  
+  
+  .texts{
+    height: 100%;
+    width: 65vw;
+    padding: 20px;
+    /* background-color: red; */
+  }
+  
+  
+  .texts img{
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    margin-left:1rem;
+    shape-outside:circle();
+    float: left;
+    margin-right:3rem;
+    opacity: 0; /* Start invisible */
+    animation: fadeIn 2s ease-in forwards; /* Apply the fade-in animation */
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5); /* Start small */
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1); /* Grow to full size */
+  }
+}
+  
+  .texts h1{
+    font-size: 35px;
+    letter-spacing: 1px;
+    color: #69140e;
+    text-align: center;  
+  }
+  
+  .texts p{
+    font-size: 18px;
+    color: #69140e;
+  }
+/* **************************************************   */
+  
+  
+  /* <!--START THE TEAM PROFILE BEGIN HERE--> */
+  #team{
+    padding-top: 3rem;
+    display: flex;
+    flex-direction:column;
+    width:100vw;
+    height: auto; 
+    align-items: center;
+    /* background: lightcoral; */
+  }
+  .our-team{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 60vw;
+    height: auto;
+    gap: 1.2rem;
+    align-items: center;
+    /* background-color: #f8de7e; */
+  }
+  
+  #team h1{
+   font-size: 35px;
+  color: #69140e;
+  }
+
+  .our-team p{
+    font-size: 18px;
+    color: #69140e;
+  }
+  
+  
+  .team-profile {
+    margin: 3rem; /* Add space around each profile card */
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    background:#69140e;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease;
+  }
+  
+  .team-profile.visible {
+    animation: slideIn 1s ease forwards;
+  }
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .team-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 85vw;
+    height: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    /* background-color: blue; */
+  }
+  
+  .team-profile img {
+    width: 100%;
+    height: 70%;
+  }
+  
+  .team-details {
+    width: 100%;
+    height: 120px;
+    color: white;
+    background-color: rgb(213, 0, 0);
+  }
+  
+  .team-details h1 {
+    letter-spacing: 1px;
+    font-size: 25px;
+    text-align: center;
+    color: white !important;
+  }
+  
+  .team-profile p {
+    text-align: center;
+    font-size: 18px;
+    color: white;
+  }
+  
+  /* <!--END THE TEAMS PROFILE END HERE   --> */
+/* *************************************************** */
+  #client{
+    padding-top: 3rem;
+    display: flex;
+    flex-direction:column;
+    width:100vw;
+    height: auto; 
+    align-items: center;
+    /* background: lightblue; */
+  }
+  .our-client{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 60vw;
+    height: auto;
+    gap: 1.2rem;
+    align-items: center;
+    /* background-color: #f8de7e; */
+  }  
+  #client h1{
+  font-size: 35px;
+  color: #69140e;
+  }
+
+  .our-client p{
+    font-size: 18px;
+    color: #69140e;
+  }
+
+/* ******************************************************************** */
+  .man{
+    margin: 3rem;
+    width: 100vw;
+    height: auto;
+    /* background-color: yellow; */
+}
+.slider{
+  color: red;
+    width: 100vw;
+    height: 30vh;
+    overflow: hidden;
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        #000 10% 90%,
+        transparent
+    );
+}
+.slider .list{
+    display: flex;
+    width: 100vw;
+    min-width: calc(var(--width) * var(--quantity));
+    position: relative;
+}
+.slider .list .item{
+    width: var(--width);
+    height: var(--height);
+    position: absolute;
+    left: 100%;
+    animation: autoRun 6s linear infinite;
+    transition: filter 0.5s;
+    animation-delay: calc( (6s / var(--quantity)) * (var(--position) - 1) - 10s)!important;
+}
+.slider .list .item img{
+    width: 100%;
+}
+@keyframes autoRun{
+    from{
+        left: 100%;
+    }to{
+        left: calc(var(--width) * -1);
+    }
+}
+.slider:hover .item{
+    animation-play-state: paused!important;
+    filter: grayscale(1);
+}
+.slider .item:hover{
+    filter: grayscale(0);
+}
+.slider[reverse="true"] .item{
+    animation: reversePlay 10s linear infinite;
+}
+@keyframes reversePlay{
+    from{
+        left: calc(var(--width) * -1);
+    }to{
+        left: 100%;
+    }
+}
