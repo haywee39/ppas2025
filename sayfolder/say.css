@@ -134,9 +134,59 @@
     background: #69140e;
   }
   .container{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     /* background-color: red; */
   }
   
+
+/* MEDIA QUERY  */
+  /* For customers section  */
+/* Tablets (≤ 992px) */
+@media (max-width: 992px) {
+  .testimonial-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .testimonial-text {
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile (≤ 600px) */
+@media (max-width: 600px) {
+  .testimonials .section-title {
+    font-size: 1.3rem;
+  }
+
+  .testimonial-card {
+    /* padding: 5px; */
+  }
+
+  .testimonial-text {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .testimonial-author img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .testimonial-carousel button.prev,
+  .testimonial-carousel button.next {
+    font-size: 1rem;
+    padding: 4px 10px;
+  }
+  .testimonial-carousel .prev {
+  left: -10px;
+  }
+
+  .testimonial-carousel .next {
+    right: -10px;
+  }
+}
+   

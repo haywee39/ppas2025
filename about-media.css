@@ -3,12 +3,16 @@
     width: 100vw;
     height: auto;
   }
+   .about-ppas-container{
+        padding: 1rem;
+        height: auto;
+      }
 
   ******************************************************** */
-  .about-ppas-container{
+  /* .about-ppas-container{
  
 
-  }
+  } */
   .texts{
     width: 95vw;
     height: 145vh;
@@ -39,7 +43,6 @@
   }
   .our-team p{
     display: flex;
-    /* height: 55vh; */
     width: 50vw;
     font-size: 17px;
     /* background-color: red; */
@@ -49,16 +52,9 @@
   #client{
     height: auto;
   }
-  .our-client p{
-    font-size: 17px;
-  }
-  .our-client p{
-    width: 95vw;
-  }
-
   .our-client{
-    width: 100vw;
-    height: 70vh;
+    width: 100%;
+    height: auto;
     /* background-color: #f8de7e; */
   }
   /* ***************************************************** */
@@ -67,22 +63,8 @@
     height: auto;
     /* background-color: yellow; */
 }
-/* ****************************************************** */
-#reach-out{
-  margin-top: 4vh;
-  padding-top: 10px;
-}
-/* ***************************************** */
-.xyz{
-  padding-left: 0;
-}
-}
-  /* ********************************************************************** */
-/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
-/* ************************************************************************************* */
 
-
-
+}
 
 
 
@@ -91,23 +73,9 @@
         width: 100vw;
         height: auto;
       }
-
-      .core-vision-mission{
-        display: flex;
-        flex-direction: column;
-        height: 145vh;
-        width: 100vw;
-      }
-      .believe{
-        width: 95vw;
-        height: 40vh;
-        text-align: center;
-        padding-left: 0;
-      }
       /* ********************************************************** */
       .about-ppas-container{
-        margin-top: 5vh;
-        padding-top: 0;
+        padding: 1rem;
         height: auto;
       }
       .about-ppas-container::before{
@@ -123,8 +91,8 @@
     }
     
       .texts{
-        width: 95vw;
-        height: 145vh;
+        width: 100%;
+        height: auto;
       }
       .texts img{
         width: 180px;
@@ -179,51 +147,19 @@
         height: auto;
         width: 100vw;
       }
-      .our-client p{
-        width: 95vw;
-      }
 
       .our-client{
         width: 100vw;
-        height: 60vh;
+        height: auto;
         /* background-color: #f8de7e; */
       }
 
       .man{
-        margin-top: 5vh;
         width: 100vw;
-        height: 45vh;
+        height: auto;
       }
       .slider .list .item img{
         width: 50%;
     }
-
-      #reach-out{
-        height: auto;
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-      }
-
-      .xyz{
-        width: 100vw;
-        height: 50vh;
-      }
-      .men-at-work{
-        height: 50vh;
-        width: 100vw;
-        margin-bottom: 0;
-        /* background-color: red; */
-        overflow-y: hidden;
-        overflow-x: hidden;
-      }
-
-      .slide-in-image {
-        width: 80vw; /* Adjust to the desired image size */
-        height: 50vh;
-        padding-left: 80px;
-        overflow-y: hidden;
-        overflow-x: hidden;
-      }
 
 }
