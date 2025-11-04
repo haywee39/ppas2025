@@ -16,11 +16,11 @@ body{
 }
 
 #services{
-  padding-top: 6vh;
+  margin-top: 130px;
   display: flex;
   flex-direction:column;
   width:100vw;
-  height: 70vh; 
+  height: auto; 
   align-items: center;
   justify-content: center;
   animation: serve 3s; 
@@ -34,46 +34,35 @@ body{
 
 }
 .our-services{
-  padding-top: 8vh;
-
   display: flex;
   flex-direction: column;
-  width: 95vw;
-  height: 60vh;
+  width: 60vw;
+  height: auto;
+  padding: 2rem;
   align-items: center;
   justify-content: center;
   /* background-color: red; */
 } 
 
 .our-services h1{
-font-family: fantasy;
 font-size: 35px;
 color: #69140e;
 }
 
-.line{
-  width: 100px;
-  height: 4px;
-  background-color: #69140e;
-}
-
-
-
 .our-services p{
-  margin-top: 2vh;
   text-align: center;
-  width: 55vw;
-  height: 37vh;
-  font-size: 20px;
+  font-size: 18px;
   color: #69140e;
   /* background-color: blue; */
 }
 /* ************************************************** */
 .our-work{
+  padding: 2rem;
   display: flex;
   flex-wrap: wrap;
   width: 100vw;
-  height: 218vh;
+  height: auto;
+  gap: 1.5rem;
   align-items: center;
   justify-content: space-evenly;
   /* background-color: blue; */
@@ -109,12 +98,15 @@ color: #69140e;
   height:450px;   
 }
 .parent img{
-  width: 360px;
-  height: 450px;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
  
 }
 
 .child{
+  padding: 1rem;
+  gap: 1.5rem;
   position: absolute;
   visibility: hidden;
   overflow: hidden;
@@ -125,7 +117,7 @@ color: #69140e;
   color: white;
   text-align: center;
   font-weight: bolder;
-  background-color: red;
+  background-color: #69140e;
   left: 0;
   bottom: 0;
   width: 0;
@@ -135,69 +127,33 @@ color: #69140e;
 }
 .parent:hover .child{
   visibility: visible;
-  width:320px;
-  height:410px;
+  width:95%;
+  height:95%;
   opacity: 0.7;
   
 }
 
 .child p{
-  margin-top: 4vh;
-  width: 270px;
   font-weight: normal;
 }
 /* ************************************************************** */
 /* **************************** */
-.project {
-  margin-top: 15vh;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100vw;
-  height: 265vh;
-  text-align: center;
-   /*background-color: red; */
-}
-
-
-.project-head{
-  display: flex;
-  flex-direction: column;
-  width: 60vw;
-  height: 150vh;
-  
-   /* background-color: yellow; */
-}
-
-
-.project-head h1{
-  font-family: fantasy;
-  font-size: 30px;
-  color: #69140e;
-  }
-
-  .project-head p{
-    font-size: 20px;
-    color: #69140e;
-    }
-
 
 .project-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 105vh;
-  width: 98vw;
+  height: auto;
+  width: 100vw;
   gap: 20px;
+  padding: 1.5rem;
   /* background-color: red; */
 }
 
 .project-item {
-  width: 300px;
-  height:45vh;
+  width: 250px;
+  height:250px;
   cursor: pointer;
   border-radius: 6px;
   transition: transform 0.2s;
@@ -205,7 +161,7 @@ color: #69140e;
 }
 
 .project-item:hover {
-  transform: scale(1.1);
+  transform: scale(0.8);
 }
 
 .lightbox {
@@ -242,14 +198,12 @@ color: #69140e;
 /* TIMELINE
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .timeline {
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* padding: 50px 20px; */
-  /* margin: 0 auto; */
   width: 100vw;
-  /* max-width: 1000px; */
   background: linear-gradient(-45deg, #d58936, white, #69140e);
   background-size: 400% 400%;
   animation: gradientShift 8s ease infinite;
@@ -282,8 +236,6 @@ time{
 
 .timeline ol li .item-inner {
   padding: 0px 180px;
-  /* margin-bottom: 3vh; */
-  /* background-color: red; */
 }
 
 .timeline ol li .time-wrapper {

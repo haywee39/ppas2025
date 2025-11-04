@@ -161,7 +161,91 @@
   <img class="lightbox-content" id="lightbox-image">
 </div>
 <!-- ************************************************************** -->
-    <div id="say"></div>
+  
+ 
+ <!-- Testimonial Section (Carousel) -->
+<!-- ===================== --> 
+<section class="testimonials animated-section">
+    <div class="container animated-section">
+      <h2 class="section-title">What Our Clients Say...</h2>
+      <!-- ************************************** -->
+      <div class="testimonial-carousel animated-section">
+  
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card active">
+          <p class="testimonial-text">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          </p>
+          <div class="testimonial-author">
+            <img src="./customerimg/IMG-20170505-WA0003.jpg" alt="Parent Photo">
+            <div>
+              <h4>Mrs. Adewale</h4>
+              <span>Parent</span>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+              when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          </p>
+          <div class="testimonial-author">
+            <img src="./customerimg/IMG-20210317-WA0010.jpg" alt="Student Photo">
+            <div>
+              <h4>David O.</h4>
+              <span>Ipsum</span>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Aspernatur odio temporibus assumenda illum, ab illo voluptatem. 
+            Sit doloremque enim quis consequuntur quae, nesciunt eius maxime
+             quaerat assumenda architecto dolor deserunt?
+          </p>
+          <div class="testimonial-author">
+            <img src="./customerimg/IMG-20170505-WA0003.jpg" alt="Parent Photo">
+            <div>
+              <h4>Mr. John</h4>
+              <span>Lorem</span>
+            </div>
+          </div>
+        </div>
+  
+         <!-- Testimonial 4 -->
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          </p>
+          <div class="testimonial-author">
+            <img src="./customerimg/IMG-20170501-WA0043.jpg" alt="Parent Photo">
+            <div>
+              <h4>Mr. Johnson</h4>
+              <span>Lorem</span>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Navigation Arrows -->
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+  
+        <!-- Dots -->
+        <div class="dots"></div>
+      </div>
+    </div>
+  </section>
+
 <!-- **************************************************************************************** -->
 
   <div id="biz-banner"></div>
@@ -179,18 +263,9 @@
 			.catch(error => console.error("Error loading biz-banner:", error));
     </script>
 
-    <script>      
-		   fetch("sayfolder/say.html")
-			.then(response => response.text())
-			.then(data => {
-			document.getElementById("say").innerHTML = data;
-			})
-			.catch(error => console.error("Error loading say:", error));
-    </script>
     
     <script src="script.js"></script>
     <script src="believefolder/believe.js"></script>
-    <script src="./sayfolder/say.js"></script>
     <script src="./footerfolder/footer.js"></script>
     <script src="./navfolder/nav.js"></script>
   
