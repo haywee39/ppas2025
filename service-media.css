@@ -1,7 +1,14 @@
 @media (width < 912px) {
+  .our-services{
+        width: 100vw;
+    gap: 15px;
+    padding: 1.5rem;
+  }
    .our-work{
+    width: 100vw;
     gap: 15px;
     padding: 1rem;
+    /* background-color: red; */
    }
 
       .lightbox{

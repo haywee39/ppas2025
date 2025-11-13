@@ -10,23 +10,20 @@ html{
 
 body{
   overflow-x: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  font-family: montserrat;
   
   
 }
 
 #contact{
-  margin-top: 13vh;
+ margin-top: 130px;
   display: flex;
   flex-direction:column;
   width:100vw;
-  height: 40vh; 
+  height: auto; 
   align-items: center;
   justify-content: center;
-  animation: conta 3s; 
+  animation: serve 3s; 
   /* background: lightcoral; */
   
 }
@@ -37,36 +34,24 @@ body{
 
 }
 .our-contacts{
-  margin-top: 5vh;
-  display: flex;
+ display: flex;
   flex-direction: column;
-  width: 65vw;
-  height: 35vh;
+  width: 60vw;
+  height: auto;
+  padding: 2rem;
   align-items: center;
   justify-content: center;
   /* background-color: red; */
 } 
 
 .our-contacts h1{
-font-family: fantasy;
 font-size: 35px;
 color: #69140e;
 }
 
-.line{
-  width: 100px;
-  height: 4px;
-  background-color: #69140e;
-}
-
-
-
 .our-contacts p{
-  margin-top: 2vh;
   text-align: center;
-  width: 55vw;
-  height: 37vh;
-  font-size: 20px;
+  font-size: 18px;
   color: #69140e;
   /* background-color: blue; */
 }
@@ -74,11 +59,11 @@ color: #69140e;
 
 /* *********************************************** */
 .contact-icons{
-  margin-top: 4vh;
+  padding: 3rem;
   display: flex;
   flex-wrap: wrap;
   width: 100vw;
-  height: 60vh;
+  height: 65vh;
   align-items: center;
   justify-content: center;
   /* background: green; */
@@ -88,34 +73,21 @@ color: #69140e;
   display: flex;
   width: 60px;
   height: 75px;
-  border-radius: 5px;
   background-color: #69140e;
-  /*background: blue;*/
   justify-content: center;
   align-items: center;
   color: white;
 }
-.contact-icons .phone i{
-  color: white !important;
-  }
 
 .contact-icons h1{
-font-family: fantasy;
-font-size: 25px;
 color: #69140e;
 }
 
 .contact-icons p{
-font-weight: bold;
 color: #69140e;
 }
 
-/*.phone .fa-solid{*/
-/*    color: white;*/
-/*}*/
-
 .phone, .whatsapp, .email, .address{
-  margin: 8px;
   display: flex;
   width: 550px;
   height: 170px;
@@ -141,11 +113,11 @@ color: white;
 }
 
 .contact-icons i:hover{
-background-color: black ;
+background-color: #d58936 ;
 }
 
 .contact-icons p:hover{
-color:rgb(213,0,0) ;
+color: #d58936 ;
 }
 
 /* ****************************************** */
@@ -154,24 +126,26 @@ color:rgb(213,0,0) ;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 80vw;
+  width: 100vw;
   height: 100vh;
+  padding: 2rem;
   /* background-color: blue; */
 }
 .contact-form{
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 80vw;
-  height: 80vh;
-  background-color: #d58936;
+  width: 100%;
+  height:100%;
+  gap: 20px;
+  /* background-color: #d58936; */
 }
 
 .cont-form, .maps{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 38vw;
+  width: 50%;
   height: 70vh;
   border-radius: 10px;
   /* background-color: rgb(70, 14, 166); */
@@ -179,8 +153,7 @@ color:rgb(213,0,0) ;
 
 }
 
-form h5{
-  font-family: fantasy;
+form h3{
   color: #69140e;
 }
 
@@ -188,7 +161,7 @@ form input{
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
-  width: 500px;
+  width: 550px;
   height: 50px;
   border-radius: 6px;
   border: none;
@@ -200,9 +173,10 @@ form input{
 }
 
 textarea{
-  width: 500px;
+  width: 550px;
   height: 30vh;
   border-radius: 6px;
+  border: none;
   font-size: 15px;
   padding-top: 10px;
   padding-left: 15px;
@@ -223,14 +197,12 @@ textarea{
 }
 .submit:hover{
   background-color: #d58936;
-  outline: #69140e solid 2px;
-  color: #69140e;
 }
 /* ***************** */
 /* ***************************************************** */
 .call-bar{
-  width: 80vw;
-  height: 10vh;
+  width: 100vw;
+  height: 12vh;
   display: flex;
   align-items: center;
   justify-content: center;
